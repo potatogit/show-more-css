@@ -1,0 +1,47 @@
+.more-content {
+     display: none;
+ }
+
+.more-content:target {
+    display: block;
+}
+
+#more-content+ul .show-less,
+#more-content:target+ul .show-more {
+    display: none;
+}
+
+/*#more-content+ul .show-more,*/
+#more-content:target+ul .show-less {
+    display: block;
+}
+
+
+
+
+
+.content-2 {
+    margin-top: 100px;
+}
+
+.more-content-2 {
+    display: none;
+}
+
+#magic-checkbox {
+    position: absolute;
+    right: 10000px;
+}
+
+.show-less-2 {
+    display: none;
+}
+
+#magic-checkbox:checked+.more-content-2,
+#magic-checkbox:checked+.more-content-2+div .show-less-2 {
+    display: block;
+}
+
+#magic-checkbox:checked+.more-content-2+div .show-more-2 {
+    display: none;
+}
